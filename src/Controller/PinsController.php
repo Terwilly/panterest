@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class PinsController extends AbstractController
 {
     /**
-     * @Route("/", name="app-home")
+     * @Route("/", name="app_home")
      */
     public function index(PinRepository $pinRepository): Response
     {
@@ -20,7 +20,7 @@ class PinsController extends AbstractController
     }
 
     /**
-     * @Route("/pins/{id<[0-9]+>}", name="app-pins-show")
+     * @Route("/pins/{id<[0-9]+>}", name="app_pins_show")
      */
     public function show(Pin $pin): Response
     {
